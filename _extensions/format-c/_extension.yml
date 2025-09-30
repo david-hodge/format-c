@@ -1,0 +1,7 @@
+title: "Format C"
+contributes:
+  formats:
+    format-c-html:
+      inherit: html
+      filters:
+        - filter-a
