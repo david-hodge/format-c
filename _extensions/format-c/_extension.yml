@@ -1,7 +1,8 @@
 title: "Format C"
 contributes:
   formats:
-    format-c-html:
+    html:
       toc: true
+      toc-location: right
       filters:
         - filter-a
