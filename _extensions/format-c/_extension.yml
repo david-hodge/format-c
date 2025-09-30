@@ -2,6 +2,6 @@ title: "Format C"
 contributes:
   formats:
     format-c-html:
-      inherit: html
+      toc: true
       filters:
         - filter-a
