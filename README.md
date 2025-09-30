@@ -1,23 +1,17 @@
-# <%= title %> Format
+Testing how to embed a filter inside a custom format.
 
-## Installing
+## Lesson 1
 
-*TODO*: Replace the `<github-organization>` with your GitHub organization.
+The `format-c` definition in `_extenison.yml` needs to compile properly before we try to embed the filter. So first embed the filter with `quarto add path/to/filter/ --embed format-c` and only then insider `filters:` code into `_extensions.yml` for format-c.
 
-```bash
-quarto use template <github-organization>/<%= filesafename %>
+## Lesson 2
+
+The custom format yml should say:
+
+```
+contributes:
+  format:
+    html:
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your article.
-
-## Using
-
-*TODO*: Describe how to use your format.
-
-## Format Options
-
-*TODO*: If your format has options that can be set via document metadata, describe them.
-
-## Example
-
-Here is the source code for a minimal sample document: [example.qmd](example.qmd).
+Note `html` not `format-c` or `format-c-html`.
